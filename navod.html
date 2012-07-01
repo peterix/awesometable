@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Návod na použití</title>
+        <meta content="" />
+        <style></style>
+        <script src="dragtable.js"></script>
+    </head>
+    <body>
+        <h1>Použití super tabulky</h1>
+        <p>K instalaci je zapotřebí pouze mít již existující tabulku a nastavit jí atribut <i>id</i>.</p>
+        <p>Dále je potřeba do hlavičky HTML dokumentu doplnit odkaz na skript <i>awesome.js</i> takto:</p>
+<pre>&lt;script src=&quot;awesome.js&quot;&gt;&lt;/script&gt;</pre>
+        <p>A potom doplnit do kódu doplnit volání, které transformuje tabulku. Pro id "tbl1" např. takto (ideálně za tabulku):</p>
+<pre>&lt;script type=&quot;text/javascript&quot;&gt;
+supertabulka.makeAwesome(&quot;tbl1&quot;);
+&lt;/script&gt;</pre>
+        <p>Názorný příklad <a href="demo.html">je zde</a>.</p>
+        <h2>Omezení</h2>
+        <ul><li>Tabulka může používat atributy colspan pouze v prvním řádku sekce THEAD.</li>
+            <li>Atribut rowspan nemůže být použit vůbec.</li>
+            <li>Pokud je potřeba nastavit velikosti buňek, je možné stylovat první sloupec a první řádek v TBODY. Změny stylů jinde vedou k nedefinovanému chování.</li>
+        </ul>
+    </body>
+</html>

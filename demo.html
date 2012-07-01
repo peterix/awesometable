@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title></title>
+        <meta content="" />
+        <style></style>
+        <script src="awesome.js"></script>
+    </head>
+    <body>
+        <h1>Demo dokument</h1>
+        <p>Ahoj světe! Toto je tabulka ve které je možné měnit velikosti řádků a sloupců, a také pořadí sloupců:</p>
+            <table id="tbl1" border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">One Two</th>
+                        <th>Three</th>
+                        <th>Four</th>
+                        <th colspan = "3">Five Six Seven</th>
+                    </tr>
+                    <tr>
+                        <th>One</th>
+                        <th>Two</th>
+                        <th>Three</th>
+                        <th>Four</th>
+                        <th>Five</th>
+                        <th>Six</th>
+                        <th>Seven</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>A toto je druhá taková tabulka, aby bylo vidět, že to funguje i pro více tabulek!</p>
+            <table  id="tbl2" border="1">
+                <thead>
+                <tr>
+                    <th>One</th>
+                    <th>Two</th>
+                    <th>Three</th>
+                    <th>Four</th>
+                </tr>
+                <tr>
+                    <th>One</th>
+                    <th>Two</th>
+                    <th>Three</th>
+                    <th>Four</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Návod na instalaci a použití (a popis omezení) <a href="navod.html">je zde</a>.</p>
+            <script type="text/javascript">
+                supertabulka.makeAwesome("tbl1");
+                supertabulka.makeAwesome("tbl2");
+            </script>
+    </body>
+</html>
